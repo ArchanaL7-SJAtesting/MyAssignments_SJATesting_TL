@@ -1,34 +1,19 @@
-package week1.day3;
-public class Car {
+package week2.day3;
 
-	public void carName() {
-		
-System.out.println("CarName is Audi");
-	}
+public class Car extends Vehicle {
 	
-		public String carColour() {
-			return "black";
-			}
-	 
-	public int noOfSeats() {
-		return 7;
-	}
-		
-	public boolean isAttractive() {
-	return true;
+
+	public void applyGear() {
+		System.out.println("Apply Gear2");
+
 	}
 	
 	public static void main(String[] args) {
-		//Syntax for creating object
-		//ClassName objectName=new ClassName();
-		
 		Car obj=new Car();
-		obj.carName();
-		System.out.println(obj.carColour());
-		System.out.println(obj.isAttractive());
-		System.out.println(obj.noOfSeats());
-		
+		obj.applyGear();
+		//obj.applyBrake();
+		//obj.soundHorn();
+	
 	}
 	
 }
-

@@ -1,21 +1,20 @@
-package week1.day3;
+ package week2.day3;
 
-public class BMW {
+public class BMW extends Car {
 	
-	public void applyBrake() {
-	System.out.println("Apply brake");
+	public void carColour() {
+		System.out.println("Black");
 	}
-	   public static void main(String[] args) {
-		//Create object for Car class in BMW class
+	public static void main(String[] args) {
+		BMW bm=new BMW();
+		bm.carColour();
 		Car obj=new Car();
-		System.out.println(obj.carColour()); 
-		/*
-		 * System.out.println(obj.carColour()); -- >when the print statement is used in
-		 * the code the carColour methods rreturns the value since it is getting
-		 * extreaccted from other class which is instead without print statement.
-		 */		BMW obj1=new BMW();
-		obj1.applyBrake();
-		
-	         }
-        }
-
+       obj.applyBrake(); 
+       obj.applyGear();
+//		bm.applyGear();
+//		bm.applyBrake();
+//		bm.soundHorn();
+//		
+	}
+	
+}
