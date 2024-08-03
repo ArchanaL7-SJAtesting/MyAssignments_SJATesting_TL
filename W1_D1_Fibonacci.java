@@ -10,20 +10,18 @@ public class W1_D1_Fibonacci {
 
 		System.out.println(secNum);
 		
-		for (int i = 0; i <=8; i++) {
+		int i;
+		
+		for (i = 0; i <=8; i++) {
 		
 			sum = firstNum + secNum;
 			
 			firstNum = secNum;  
 		
-	   		secNum = sum;//2
+	   		secNum = sum;
 			
 			System.out.println(sum);
 			
-		
-			}
-			
-		}       
+					}
+				}       
 	}
-
-
